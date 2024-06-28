@@ -53,4 +53,4 @@ for filepath in list_of_files:
 
     
     else:
-        logging.info(f"{filename} is already exists")
+        logging.info(f"{filename} is already exists") #if there is code in the file or it is not empty it will create a new file

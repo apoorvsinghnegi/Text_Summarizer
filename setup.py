@@ -1,4 +1,4 @@
-#locl package installation logic present here
+#local package installation logic present here
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as f:# to publish this project as package we need to read the README.md file using pypi package

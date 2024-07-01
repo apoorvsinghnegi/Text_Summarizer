@@ -1,11 +1,12 @@
 #writing common code/functions which we will be using again and again in our project
-#creating a module here that we will use again and again
+#creating a module here that we will use again and again i.e. they are called utility functions
 import os
-from box.exceptions import BoxValueError
+from box.exceptions import BoxValueError #for handling exceptions
 import yaml
 from textSummarizer.logging import logger
 from ensure import ensure_annotations
-from box import ConfigBox
+from box import ConfigBox #config box  which provides a way to create dot-accessible dictionaries. 
+#This means you can access dictionary items using dot notation, which can make the code cleaner and easier to read.
 from pathlib import Path
 from typing import Any
 
@@ -14,9 +15,13 @@ from typing import Any
 @ensure_annotations
 #@ensure_annotations?
 #this is generally used when if we are passing arguments of different data type and we are using input of different data type
-#this is will then error to us then but if we don't put this then this will not throw any exceptions to us
+#this is will then error to us then but if we don't put this then this will not throw any exceptions to us so we won't know
+#if this is correct or wrong
 #reading yaml file till it returns all the content inside the yaml file. Here in every function we are using datatype hence,
 #we are using this.
+
+#read yaml file and return all the content in the yaml file
+@ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """reads yaml file and returns
 

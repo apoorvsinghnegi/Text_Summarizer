@@ -8,9 +8,8 @@ data_ingestion:
   source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/summarizer-data.zip #from where to download data
   local_data_file: artifacts/data_ingestion/data.zip  #how data will be downloaded
   unzip_dir: artifacts/data_ingestion
- #artifacts/data_ingestion/samsumdata.zip
-
-
+ 
+ #In data validation we check whether the 3 files that we have downloaded are available or not
 data_validation:
   root_dir: artifacts/data_validation
   STATUS_FILE: artifacts/data_validation/status.txt

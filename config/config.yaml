@@ -18,9 +18,10 @@ data_validation:
 
 
 data_transformation:
-  root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/samsum_dataset
-  tokenizer_name: google/pegasus-cnn_dailymail
+  root_dir: artifacts/data_transformation #after applying transformation it will save the transformed data
+  data_path: artifacts/data_ingestion/samsum_dataset  #From here it will take the data it need for transformation
+  tokenizer_name: google/pegasus-cnn_dailymail #pegasus-cnn-dailymail is the pretrained model used for summarization task, it
+  #will download the tokenizer from here
 
 
 
